@@ -2,6 +2,7 @@ package com.aravind.rest.validators;
 
 import com.aravind.rest.dao.IDataStore;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Component;
 public class ClientIdValidator {
 
     @Autowired
+    @Qualifier("MySqlDataStore")
     private IDataStore dataStore;
 
     public void validate(String clientId) {

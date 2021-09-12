@@ -1,6 +1,7 @@
 package com.aravind.rest.controllers;
 
 import com.aravind.rest.request.objects.UrlShortenRequest;
+import com.aravind.rest.response.object.UrlShortenResponse;
 import com.aravind.rest.services.UrlShorteningService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,7 +22,7 @@ public class UrlShorteningController {
     private UrlShorteningService urlShorteningService;
 
     @PostMapping(path = "/shorten")
-    public String create(@RequestBody UrlShortenRequest urlShortenRequest) {
+    public UrlShortenResponse create(@RequestBody UrlShortenRequest urlShortenRequest) {
         return urlShorteningService.getShortenedUrl(urlShortenRequest.getClientId(), urlShortenRequest.getLongUrl());
     }
 }
