@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author aravind.n
  */
 @RestController
-@RequestMapping(path="/v1/url") 
+@RequestMapping(path="/v1/url")
 public class UrlShorteningController {
 
     @Autowired
