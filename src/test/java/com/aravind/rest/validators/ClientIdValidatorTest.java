@@ -9,7 +9,7 @@
 //import org.mockito.Matchers;
 //import org.mockito.Mock;
 //import org.mockito.Mockito;
-//import org.mockito.junit.MockitoJUnitRunner;
+//import org.mockito.junit.MockitoJUnitRunner; 
 //
 ///**
 // * A Unit test class for {@link ClientIdValidator}
